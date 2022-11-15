@@ -26,7 +26,13 @@
             <input type="text" class="form-control" id="inputElement">
             <div class="row my-4 pt-3">
               <div class="col-sm-4 text-start">
-                <button type="button" class="btn btn-primary">Inserisci</button>
+                <button type="button" class="btn btn-primary" onclick="getElement()">Inserisci</button>
+              </div>
+              <div class="col-sm-4 text-center">
+                <button type="button" class="btn btn-primary" onclick="writeList()">Stampa Lista</button>
+              </div>
+              <div class="col-sm-4 text-end">
+                <button type="button" class="btn btn-primary" onclick="clearGroceryList(true)">Elimina Tutto</button>
               </div>
             </div>
           </div>
@@ -38,11 +44,9 @@
 
       </div>
 
-      <div class="row mt-4 pt-2 px-4 text-start" id="groceryList">
-        <ul>
-          <li>
-            Ciao <button type="button" class="btn btn-primary">Elimina</button>
-          </li>
+      <div class="row mt-4 pt-2 px-4 text-start">
+        <ul id="groceryList">
+
         </ul>
       </div>
     </div>
