@@ -43,7 +43,7 @@ function addElementToList(index){
     //in caso l'utente voglia poi rimuoverlo.
 
     newButton.setAttribute('onclick', "removeElement(" + index +")");
-    newButton.setAttribute('class', 'btn btn-primary m-3')
+    newButton.setAttribute('class', 'btn btn-primary m-3');
     newButton.appendChild(buttonText);
     node.setAttribute('id', index);
 
@@ -62,7 +62,7 @@ function addElementToList(index){
 function getElement(){
     groceryElement = document.getElementById('inputElement').value;
 
-    if(groceryElement === null || groceryElement === "" || groceryElement === " "){
+    if(groceryElement.trim() === ""){
         return false;
     } else {
         groceryArray.push(groceryElement);
