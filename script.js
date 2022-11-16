@@ -4,9 +4,6 @@ let groceryCount = 0;
 const groceryArray=[];
 const groceryList = document.getElementById('groceryList');
 
-//La funzione getElement() assegna a groceryElement il valore nell'input del form. Se l'input è vuoto, viene ignorato.
-//Se l'input è valido, mette l'elemento nell'array.
-
 //La funzione clearGroceryList() pulisce completamente la lista della spesa, permettendo di iniziare da capo. Prende in ingresso una booleana, per indicare
 //se vogliamo una pulizia completa (true) o solo dell'HTML (false).
 
@@ -58,6 +55,9 @@ function addElementToList(index){
 
     groceryList.appendChild(node);
 }
+
+//La funzione getElement() assegna a groceryElement il valore nell'input del form. Se l'input è vuoto, viene ignorato.
+//Se l'input è valido, mette l'elemento nell'array.
 
 function getElement(){
     groceryElement = document.getElementById('inputElement').value;
